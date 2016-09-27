@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Site de vente en ligne de la collection speciale henri potier">
+    <meta name="author" content="Jessica Audas">
+
+    <link rel="icon" href="assets/img/RT.ico">
+
+    <title>Les livres du plat pays</title>
+
+    <!-- Bootstrap Core CSS v3.3.7-->
+   <!--<link href="assets/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- MATERIAL DESIGN 1.1.0-->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+    <!-- FONT AWESOME CSS 4.6.3-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="bookshopApp"> <!--Déclaration de l'APP -->
+
+    <!--navbar -->
+    <div ng-include src="'app/shared/navbar/navbar.html'">cca</div>
+
+
+
+    <!--  Contenu  -->
+    <div id="main">
+        <div  ng-view=""></div>
+    </div>
+
+    <!-- Footer -->
+    <div class = "footer">
+        Merci !
+    </div>
+
+
+    <!-- SCRIPTS -->
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Angular  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+
+
+    <!-- Divers JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <!-- Module Angular  -->
+    <script src="app/appModule.js"></script>
+
+    <!-- Controlleurs  -->
+    <script src="app/components/products/productsController.js"></script>
+    <script src="app/components/cart/cartController.js"></script>
+
+    <!-- Services -->
+    <script scr="app/components/cart/cartService.js"></script>
+
+</body>
+
+</html>
