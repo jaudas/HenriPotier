@@ -1,6 +1,6 @@
 'use strict';
 
-bookshopApp.controller('ProductsCtrl', function($scope, $http){
+bookshopApp.controller('ProductsCtrl', function($rootScope, $scope, $http, $location, CartService){
 
 	var MOCK_URL = "offline.json";
 
@@ -11,11 +11,10 @@ bookshopApp.controller('ProductsCtrl', function($scope, $http){
 	});
 	
 
-/*	$scope.addToCart = function (book) {
-      cartService.addBook(book);
-      $rootScope.$broadcast('changeCart');
+	$scope.addToCart = function (book) {
+      CartService.addBook(book);
     };
-*/
+
 
 
 });

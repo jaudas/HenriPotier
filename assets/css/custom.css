@@ -1,0 +1,54 @@
+#products{
+	padding : 0 4%;
+}
+
+h1{
+	padding: 2%;
+}
+
+#catalogue-item{
+	border: 2px solid #D3D3D3;
+	border-radius: 10px;
+	margin : 1%;
+	padding: 2%
+}
+
+#desc_book{
+	margin : 1%;
+}
+
+.book_title{
+	font-family: Verdana, sans-serif;
+	font-variant: small-caps ;
+}
+
+#cart-item{
+	border: 2px solid #D3D3D3;
+	border-radius: 10px;
+	margin : 1%;
+	padding: 2%;
+}
+
+
+.empty-cart{
+	font-family: Verdana, sans-serif;
+	color : #4D4D4D;
+	text-align: center;
+}
+
+#empty-cart-img{
+	padding: 2%;
+	height: 100%;
+	width : auto;
+}
+
+#selected-offer{
+	padding : 10px;
+	font-style: italic;
+}
+
+#cart-price{
+	padding : 1%;
+	font-family: Avenir, Verdana, sans-serif;
+	font-size: large;
+}

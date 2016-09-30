@@ -1,5 +1,10 @@
-catalogue des livres 
-<div ng-repeat="book in products">
-	<div ng-include src="'app/shared/book/bookView.html'"></div>
-		<md-button class="md-raised" ng-click=""><i class="fa fa-shopping-cart"></i> Add to Cart</md-button>
-</div> 
+<div class = "row" id = "products">
+	<h1>Notre catalogue - Collection Speciale Henri Pottier </h1>
+	<p> Venez découvrir notre collection spéciale pour les 10 ans de la saga ! </p>
+	<div id = "catalogue-item" class = "col-xs-12 col-sm-12 col-md-6 col-xl-4" ng-repeat="book in products">
+
+		<div ng-include src="'app/shared/book/bookView.html'"></div>
+		
+		<button type="button" class="btn btn-default"ng-click="addToCart(book)"><i class="fa fa-shopping-cart"></i> Ajouter au panier </button>
+	</div> 
+</div>

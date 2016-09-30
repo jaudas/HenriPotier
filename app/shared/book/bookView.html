@@ -1,9 +1,13 @@
-<div class="desc_books">
-	<p>
-	<div class="books_title"> 
+<div id="desc_book">
+	
+	<div class="book_title"> 
 		{{book.title}}
 	</div>
+
+	<img ng-src="{{book.cover}}" >
+
 	<div class="book_price"> 
 		Prix : {{book.price}} euros
+		{{book.cover}}
 	</div>
 </div>
