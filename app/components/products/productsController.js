@@ -6,7 +6,7 @@ bookshopApp.controller('ProductsCtrl', function($rootScope, $scope, $http, $loca
 
 	$scope.products = [];
 	
-	$http.get(MOCK_URL).success(function(data){
+	$http.get("http://henri-potier.xebia.fr/books").success(function(data){
 			$scope.products=data;
 	});
 	
