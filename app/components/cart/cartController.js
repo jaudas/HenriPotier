@@ -52,6 +52,12 @@ bookshopApp.controller('CartCtrl', function($scope, $http, $location, CartServic
 
 	$scope.removeFromCart = function (book) {
       CartService.remove(book);
+      initialPrice();
+      discountPrice();
     };
+
+    $scope.modifyquantity = function(book, newQuantity){
+    	CartService.changequantity(book,newQuantity);
+    }
 
 });

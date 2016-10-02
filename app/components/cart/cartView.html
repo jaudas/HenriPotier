@@ -5,19 +5,21 @@
 	<div ng-show="cart.length == 0">
 		<div class = "empty-cart">
 			<img id="empty-cart-img" src = "assets/img/empty-cart.png">
-			<p>Oh, vous n'avez rien ajouter à votre panier...
+			<p>Oh, vous n'avez rien ajouté à votre panier...
 			N'hésitez pas à revenir pour découvrir les réductions exclusives ! </p>
 		</div>
 	</div>
 
 	<div ng-show="cart.length !=0">
-		<div id="cart-item" ng-repeat="book in cart">
-			<div ng-include src="'app/shared/book/bookView.html'"></div>
-			<div> Quantité souhaitée : {{book.quantity}}</div>
-			<button type="button" class="btn btn-default"ng-click="removeFromCart(book)"><i class="fa fa-trash"></i> Supprimer du panier </button>
+		<div class = "col-xs-12 col-sm-6 col-md-6 col-xl-4" ng-repeat="book in cart">
+			<div id="cart-item">
+				<div ng-include src="'app/shared/book/bookView.html'"></div>
+				<div> Quantité souhaitée : {{book.quantity}}</div>
+				<button type="button" class="btn btn-default"ng-click="removeFromCart(book)"><i class="fa fa-trash"></i> Supprimer du panier </button>
+			</div>
 		</div> 
 
-		<div id="cart-price">
+		<div id="cart-price" class = "col-xs-12">
 			<div id="selected-offer">
 				<div ng-if="bestOffer.type == 'reduction'">
 					<p> <i class="fa fa-magic" aria-hidden="true"></i> Votre réduction magique vous permet d'économiser {{bestOffer.value}} % sur votre panier ! <i class="fa fa-magic" aria-hidden="true"></i></p>
@@ -33,8 +35,8 @@
 			</div>
 
 			<div class ="price">
-				Prix : {{discountPrice()}} euros au lieu de {{initialPrice()}} !
-				Contactez nous pour passer votre commande et soyez livrés demain !
+				<p>Vous payerez donc {{discountPrice()}} &euro; au lieu de {{initialPrice()}} !
+				Contactez nous pour passer votre commande et soyez livrés demain !</p>
 			</div>
 		</div>
 	</div>

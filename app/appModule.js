@@ -74,6 +74,11 @@ bookshopApp.service('CartService', [function(){
     }
   }
 
+  this.changequantity = function (book, newquantity){
+    var index = this.$cart.books.indexOf(book);
+    
+  }
+
 
 }]);
 

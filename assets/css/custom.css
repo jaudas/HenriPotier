@@ -9,12 +9,14 @@ h1{
 #catalogue-item{
 	border: 2px solid #D3D3D3;
 	border-radius: 10px;
-	margin : 1%;
-	padding: 2%
+	padding: 2%;
+	margin:1%;
+	text-align: center;
 }
 
 #desc_book{
 	margin : 1%;
+	text-align: center;
 }
 
 .book_title{
@@ -25,8 +27,9 @@ h1{
 #cart-item{
 	border: 2px solid #D3D3D3;
 	border-radius: 10px;
-	margin : 1%;
 	padding: 2%;
+	margin:1%;
+	text-align: center;
 }
 
 
@@ -51,4 +54,13 @@ h1{
 	padding : 1%;
 	font-family: Avenir, Verdana, sans-serif;
 	font-size: large;
+	text-align: center;
+}
+
+#book-img{
+	max-width: 300px;
+	max-height: auto;
+	padding: 5%;
+	display: block;
+	margin: auto;
 }
